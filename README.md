@@ -1,3 +1,53 @@
+# Pokémon pokédex challenge
+
+<!-- MarkdownTOC -->
+
+1. [Demo rationale](#demo-rationale)
+1. [Requirements](#requirements)
+1. [Create React App](#create-react-app)
+    1. [Available Scripts](#available-scripts)
+        1. [`npm start`](#npm-start)
+        1. [`npm test`](#npm-test)
+        1. [`npm run build`](#npm-run-build)
+        1. [`npm run eject`](#npm-run-eject)
+    1. [Learn More](#learn-more)
+        1. [Code Splitting](#code-splitting)
+        1. [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+        1. [Making a Progressive Web App](#making-a-progressive-web-app)
+        1. [Advanced Configuration](#advanced-configuration)
+        1. [Deployment](#deployment)
+        1. [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+
+<!-- /MarkdownTOC -->
+
+---
+
+# Demo rationale
+
+# Requirements
+
+Build a web page, using any front-end library/framework of your choice, and display the following data:
+
+https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
+
+The table should show at least the following information for each pokemon:
+
+-   Name
+-   Number
+-   Type
+-   Height
+-   Weight
+-   Weaknesses
+-   Next Evolution
+
+The data should be sorted alphabetically by name from A to Z. As long as you meet the minimum requirement, you have creative freedom to develop the concept in any way you like, within the allowed time.
+
+Finally, how you choose to demonstrate the final product is up to you, our only ask is that you package up the source code for a developer review.
+
+---
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,6 +1,7 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
+  "description": "A very basic Pokédex built in React (with React Hooks)",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
