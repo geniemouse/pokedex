@@ -1,0 +1,23 @@
+.face--front {
+    z-index: 2;
+}
+
+.face--front,
+.face--front header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.face--front header {
+    flex-grow: 1;
+}
+
+.face--front h2 {
+    margin: 0;
+}
+
+.face--front .pokemon-id {
+    display: block;
+    font-size: small;
+}

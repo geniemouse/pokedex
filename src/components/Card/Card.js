@@ -1,17 +1,16 @@
 import React from "react";
+
+import CardFront from "./CardFront/CardFront";
+import CardBack from "./CardBack/CardBack";
 import "./Card.css";
 
 function Card(props) {
-    const { id, name } = props;
+    const { id, img, name, type } = props;
     return (
         <article id={`pokemon-${name}`} className="card">
             <div className="card-flip">
-                <h2>
-                    <span className="pokemon-id">#{id}</span> {name}
-                </h2>
-
-                <p>Card front...</p>
-                <p>Card back...</p>
+                <CardFront id={id} img={img} name={name} type={type} />
+                <CardBack />
             </div>
         </article>
     );
