@@ -1,4 +1,12 @@
-.pokemon-figure figure {
+.pokemon-figure {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 0.375em;
+}
+
+.face--front .pokemon-figure {
     display: flex;
     flex-grow: 1;
 }

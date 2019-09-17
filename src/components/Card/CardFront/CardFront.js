@@ -1,9 +1,10 @@
 import React from "react";
 import Figure from "../../UI/Figure/Figure";
+import PokemonTypesList from "../../Pokemon/PokemonTypesList/PokemonTypesList";
 import "./CardFront.css";
 
 function CardFront(props) {
-    const { id, img, name } = props;
+    const { id, img, name, type } = props;
     return (
         <div className="face face--front">
             <header>
@@ -13,7 +14,9 @@ function CardFront(props) {
                 </h2>
             </header>
 
-            <p>Pokemon type...</p>
+            <PokemonTypesList types={type}>
+                <h3 className="visually-hidden">Pokémon type</h3>
+            </PokemonTypesList>
         </div>
     );
 }

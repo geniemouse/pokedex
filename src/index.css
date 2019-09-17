@@ -24,11 +24,6 @@ body {
     display: none !important;
 }
 
-img[width][height] {
-    width: 100%;
-    height: auto;
-}
-
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;

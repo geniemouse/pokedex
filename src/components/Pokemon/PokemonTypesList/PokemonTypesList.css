@@ -1,0 +1,89 @@
+.pokemon-types-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -0.25em;
+    padding: 0.25em 0;
+    list-style: none;
+}
+
+[class^="type--"] {
+    margin: 0.25em;
+    padding: 0.25em 0.8em;
+    color: white;
+    font-weight: 600;
+    text-transform: lowercase;
+    background-color: dimgrey;
+    border-radius: 0.25em;
+}
+
+.type--bug {
+    background-color: olive;
+}
+
+.type--dark {
+    background-color: darkslateblue;
+}
+
+.type--dragon {
+    background-color: teal;
+}
+
+.type--electric {
+    color: #333;
+    background-color: gold;
+}
+
+.type--fairy {
+    background-color: magenta;
+}
+
+.type--fighting {
+    background-color: darkorange;
+}
+
+.type--fire {
+    background-color: crimson;
+}
+
+.type--flying {
+    color: #333;
+    background-color: lightskyblue;
+}
+
+.type--ghost {
+    color: #333;
+    background-color: paleturquoise;
+}
+
+.type--grass {
+    background-color: green;
+}
+
+.type--ground {
+    background-color: sienna;
+}
+
+.type--ice {
+    background-color: darkturquoise;
+}
+
+.type--poison {
+    background-color: blueviolet;
+}
+
+.type--psychic {
+    background-color: plum;
+}
+
+.type--rock {
+    background-color: peru;
+}
+
+.pokemon-types .type--steel {
+    background-color: steelblue;
+}
+
+.type--water {
+    color: #333;
+    background-color: aqua;
+}
