@@ -1,0 +1,13 @@
+.pokedex-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.25em, 1fr));
+    grid-gap: 1em;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pokedex-list > li {
+    margin: 1em;
+}

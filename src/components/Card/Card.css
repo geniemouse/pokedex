@@ -1,0 +1,29 @@
+.card {
+    display: inline-block;
+    padding: 0.5em;
+    border: solid 0.0625em silver;
+    border-radius: 0.375em;
+    perspective: 62.5em;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card .pokemon-id {
+    display: block;
+    font-size: small;
+}
+
+.card-flip {
+    position: relative;
+    width: 16.25em;
+    height: 21.25em;
+    padding: 1em;
+    border: solid 0.0625em silver;
+    border-radius: 0.375em;
+    box-shadow: 0 0.0625em 0.375em rgba(0, 0, 0, 0.26);
+
+    transition: transform 0.6s ease-out;
+    transform-style: preserve-3d;
+}

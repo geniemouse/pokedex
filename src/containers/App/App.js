@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import useFetch from "../../hooks/useFetch";
+
+import PokedexList from "../../components/PokedexList/PokedexList";
 import "./App.css";
 
 function useFetchPokemon() {
@@ -39,15 +41,7 @@ function App() {
             </header>
 
             <main id="main">
-                {pokemon && pokemon.length ? (
-                    <ul>
-                        {pokemon.map((p) => (
-                            <li key={p.id}>{p.name}</li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>Searching for Pokémon...</p>
-                )}
+                <PokedexList pokemon={pokemon} />
             </main>
         </Fragment>
     );
