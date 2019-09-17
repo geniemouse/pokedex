@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+    /* Make browser focus-style consistent and highly visible
+    - Unfortunate side-effect of adding outline on link click, but good for accessibility - make it a feature!
+    In future :focus-visible will be the better option; only supported by Firefox at present */
+    outline: 2px solid orange;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+img[width][height] {
+    width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0); /* Clip is a deprecated CSS property that many older browsers still support */
+    clip-path: inset(100%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.skip-link {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75em;
+    color: white;
+    background: midnightblue;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transform: translateY(-10em);
+    transition: transform 0.2s ease-in-out;
+    z-index: 20;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
 }
