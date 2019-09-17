@@ -24,6 +24,15 @@
 
 # Demo rationale
 
+-   As the requirements did not specify, I decided to load the data via an `fetch` request to the `url` provided (trying-out a custom React hook). It could just as easily have been a static `json` file in the project, saving a network request
+-   Only latest browsers assumed, i.e. no IE11 testing carried out
+-   For speed of development there are no fallbacks for the following:
+    -   CSS `grid` & `flex` layout
+-   For speed of development there are no unit-tests or use of extending functionality such as `propTypes`, `TypeScript` or other packages
+-   There are no optimisations, e.g. `React.memo()`
+
+---
+
 # Requirements
 
 Build a web page, using any front-end library/framework of your choice, and display the following data:
