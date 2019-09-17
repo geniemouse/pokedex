@@ -1,3 +1,25 @@
 .card .face--back {
     transform: rotateY(-180deg);
 }
+
+.pokemon-specs {
+    width: 100%;
+    font-size: 0.9rem;
+    border-spacing: 0 0.5em;
+}
+
+.pokemon-specs caption {
+    margin: 0.5em 0;
+    text-align: initial;
+}
+
+.pokemon-specs td {
+    padding-bottom: 0.4em;
+    border-bottom: solid 0.0625em silver;
+}
+
+.pokemon-specs th,
+.pokemon-specs td {
+    display: block;
+    width: 100%;
+}

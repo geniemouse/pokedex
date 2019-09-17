@@ -1,0 +1,13 @@
+.pokemon-evolutions-list {
+    padding: 0;
+    list-style: none;
+}
+
+.pokemon-evolutions-list > li {
+    display: inline-block;
+}
+
+.pokemon-evolutions-list > li + li::before {
+    margin: 0 0.5em;
+    content: ">";
+}
