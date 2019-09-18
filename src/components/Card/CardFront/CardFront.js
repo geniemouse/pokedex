@@ -8,7 +8,7 @@ function CardFront(props) {
     return (
         <div className="face face--front">
             <header>
-                <Figure src={img} width="120" height="120" />
+                <Figure forceHttps src={img} width="120" height="120" />
                 <h2>
                     <span className="pokemon-id">#{id}</span> {name}
                 </h2>
